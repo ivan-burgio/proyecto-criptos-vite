@@ -23,7 +23,7 @@ const InputSubmit = styled.input`
 `;
 
 export default function Formulario() {
-    const [SelectMonedas] = useSelectMonedas('Elige tu Moneda', monedas);
+    const [moneda, SelectMonedas] = useSelectMonedas('Elige tu Moneda', monedas);
 
     return (
         <form>
