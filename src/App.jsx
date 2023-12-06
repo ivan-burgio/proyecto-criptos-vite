@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import Formulario from './components/Formulario';
 import ImagenCripto from './img/imagen-criptos.png'
@@ -43,18 +43,28 @@ const Heading = styled.h1 `
 
 function App() {
 
-  return (
-    <Contenedor>
-        <Imagen 
-            src={ImagenCripto}
-            alt="imagenes criptomonedas"
-        />
-        <div>
-            <Heading>Cotiza Criptomonedas al Instante</Heading>
-            <Formulario />
-        </div>
-    </Contenedor>
-  )
+    const [monedas, setMonedas] = useState({});
+
+    useEffect(() => {
+        if(Object.keys(monedas).length > 0) {
+            
+        }
+    }, [monedas])
+
+    return (
+        <Contenedor>
+            <Imagen 
+                src={ImagenCripto}
+                alt="imagenes criptomonedas"
+            />
+            <div>
+                <Heading>Cotiza Criptomonedas al Instante</Heading>
+                <Formulario 
+                    setMonedas={setMonedas}
+                />
+            </div>
+        </Contenedor>
+    )
 }
 
 export default App
