@@ -4,7 +4,7 @@ Tercer proyecto de practica del curso React - La Guia Completa.
 La estructura base del proyecto se hizo con Vite.
 Para los estilos se hace uso de los Styled Components de React.
 
-Deployment del proyecto: no disponile por el momento
+Deployment del proyecto: https://cotizadorcriptos-ivanburgio.netlify.app
 
 Currently, two official plugins are available:
 
